@@ -1,76 +1,10 @@
 <!DOCTYPE html>
-<html lang="nl">
-<head>
 
-    <meta charset="UTF-8">
-    <title>Raad het Nummer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-            background-color: #f0f0f0;
-        }
-        #game {
-            background-color: white;
-            display: inline-block;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        input[type="number"] {
-            padding: 10px;
-            width: 60px;
-            font-size: 16px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin-left: 10px;
-        }
-        #result {
-            margin-top: 20px;
-            font-size: 18px;
-        }
-    </style>
-</head>
-<a href="pagina2.html" klik hier voor pagina 2 </a>
-</pading>
-<body>
-    
+<html>
+    <head>
 
-    <div id="game">
-        <h1>Raad het Nummer</h1>
-        <p>Raad een nummer tussen 1 en 100</p>
-        <input type="number" id="guessInput" min="1" max="100">
-        <button onclick="checkGuess()">Gok!</button>
-        <p id="result"></p>
-    </div>
-
-    <script>
-        const secretNumber = Math.floor(Math.random() * 100) + 1;
-        let attempts = 0;
-
-        function checkGuess() {
-            const guess = Number(document.getElementById('guessInput').value);
-            const result = document.getElementById('result');
-            attempts++;
-
-            if (guess < 1 || guess > 100) {
-                result.textContent = "Voer een nummer in tussen 1 en 100.";
-                return;
-            }
-
-            if (guess === secretNumber) {
-                result.textContent = `Gefeliciteerd! Je hebt het nummer ${secretNumber} geraden in ${attempts} beurten.`;
-            } else if (guess < secretNumber) {
-                result.textContent = "Te laag! Probeer het opnieuw.";
-            } else {
-                result.textContent = "Te hoog! Probeer het opnieuw.";
-            }
-        }
-    </script>
-
-</body>
-
+    </head>
+    <body>
+        
+    </body>
 </html>
