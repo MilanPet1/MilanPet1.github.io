@@ -8,6 +8,7 @@ body{background-color: beige;}
   <a href="#" class="w3-bar-item w3-button"> </a>
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
+
 </div>
 
 <div style="margin-left:25%">
@@ -21,4 +22,24 @@ ul.menu {
   padding-left: 0;
   margin: 0;
 }
-<style
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+   width: 200px;
+  background-color: #f1f1f1;
+
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: aquamarine;
+  color: white;
+}
