@@ -14,9 +14,11 @@ body{background-color: beige;}
 ... page content  ...
 </div>
 <p>
+
+<style
 ul.menu {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-
+<style
