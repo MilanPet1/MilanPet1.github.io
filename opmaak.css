@@ -37,3 +37,64 @@ li a:hover{
   background-color: aquamarine;
   color: white;
 }
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dropdown Menu (CSS)</title>
+<style>
+  body{font-family:system-ui;background:#f7fafc;margin:2rem;color:#0b1220}
+  nav{max-width:900px;margin:0 auto}
+  ul {list-style:none;margin:0;padding:0;display:flex;gap:0.5rem}
+  .item {position:relative}
+  .item > a {
+    display:block;padding:.6rem .9rem;border-radius:8px;text-decoration:none;color:inherit;
+  }
+  .item > a:focus-visible { box-shadow: 0 0 0 3px rgba(14,165,233,0.18); outline:none; }
+
+  /* Submenu */
+  .submenu {
+    position:absolute;
+    left:0;
+    top:calc(100% + 8px);
+    min-width:200px;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 10px 30px rgba(2,6,23,0.12);
+    padding:.4rem;
+    transform-origin:top;
+    opacity:0;
+    visibility:hidden;
+    transform: translateY(-6px) scale(.98);
+    transition:opacity .18s, transform .18s, visibility .18s;
+    z-index:60;
+  }
+
+  /* Show submenu on hover OR keyboard focus */
+  .item:hover > .submenu,
+  .item:focus-within > .submenu {
+    opacity:1;
+    visibility:visible;
+    transform: translateY(0) scale(1);
+  }
+
+  .submenu a { padding:.5rem .6rem; display:block; border-radius:6px; color:#0b1220; text-decoration:none }
+  .submenu a:hover, .submenu a:focus { background:#eef2f7; }
+
+</style>
+</head>
+<body>
+<nav aria-label="Site navigation">
+  <ul role="menubar">
+    <li class="item" role="none"><a role="menuitem" href="#home">Home</a></li>
+    <li class="item" role="none">
+      <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#products">Products ▾</a>
+      <div class="submenu" role="menu" aria-label="Products submenu">
+        <a role="menuitem" href="#prod1">Product 1</a>
+        <a role="menuitem" href="#prod2">Product 2</a>
+        <a role="menuitem" href="#prod3">Product 3</a>
+      </div>
+    </li>
+    <li class="item" role="none"><a role="menuitem" href="#about">About</a></li>
+    <li class="item" role="none"><a role="menuitem" href="#contact">Contact</a></li>
+  </ul>
+</nav>
