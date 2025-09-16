@@ -1,55 +1,21 @@
 body{background-color: #377781;} 
-
- 
-
- 
-  
- <div class="w3-sidebar w3-bar-block" style="width:25%">
-  <a href="#" class="w3-bar-item w3-button"> </a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-
-</div>
-
-<div style="margin-left:25%">
-... page content  ...
-</div>
-
-
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-   width: 16px;
-  background-color: black;
-  position: fixed ;
-  opacity: 1;
-
-
+  width: 200px;
+  background-color: #f1f1f1;
 }
 
 li a {
   display: block;
-  color: rgb(255, 255, 255);
+  color: black;
   padding: 8px 16px;
   text-decoration: none;
-
-navbar 
-  display: flex;
-  background-color: #333;
-
-
-
-navbar a 
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-
-
-li a:hover
-  background-color: aquamarine;
-  color: rgb(0, 0, 0);
 }
 
+/* Change the link and background color on hover */
+li a:hover {
+  background-color: #555555;
+  color: white;
+}
