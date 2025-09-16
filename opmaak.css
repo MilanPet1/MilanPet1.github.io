@@ -34,13 +34,13 @@ li a {
   color: rgb(255, 255, 255);
   padding: 8px 16px;
   text-decoration: none;
-  /* Top navigation bar */
+
 .navbar 
   display: flex;
   background-color: #333;
 
 
-/* Navigation bar links */
+
 .navbar a 
   color: white;
   padding: 14px 20px;
