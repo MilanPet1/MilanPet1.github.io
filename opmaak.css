@@ -35,20 +35,20 @@ li a {
   padding: 8px 16px;
   text-decoration: none;
   /* Top navigation bar */
-.navbar {
+.navbar 
   display: flex;
   background-color: #333;
-}
+
 
 /* Navigation bar links */
-.navbar a {
+.navbar a 
   color: white;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
-}
 
-li a:hover{
+
+li a:hover
   background-color: aquamarine;
   color: rgb(0, 0, 0);
 }
