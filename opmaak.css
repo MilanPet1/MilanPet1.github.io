@@ -1,4 +1,4 @@
-body{background-color: #a8edf7;} 
+body{background-color: #377781;} 
 
  
 
@@ -23,6 +23,8 @@ ul {
   padding: 0;
    width: 16px;
   background-color: black;
+  position: fixed ;
+  
 
 }
 
