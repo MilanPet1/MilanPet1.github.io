@@ -32,7 +32,8 @@ p {
 margin-left: 600px;
 padding: 150px;
 background-color: #60959e;
-border-radius: 0;
+border: 2px ;
+border-radius: 5px;;
 text-align: center;
 font-size: 20px;
 width: 300px;
