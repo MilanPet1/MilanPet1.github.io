@@ -11,7 +11,7 @@ ul {
   width: 200px;
   background-color: #60959e;
   height: 96%;
-  position: static;
+  position: fixed;
 }
 
 li a {
