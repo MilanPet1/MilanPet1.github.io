@@ -1,5 +1,9 @@
 body{background-color: #377781;} 
 
+.spelletje {
+  float: left;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
