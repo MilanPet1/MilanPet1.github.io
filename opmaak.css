@@ -9,7 +9,8 @@ ul {
   height: 96%;
   position: fixed;
   border: 5px ;
-  border-radius: 10px;  
+  border-radius: 10px;
+  text-align: center;  
 }
 
 li a {
