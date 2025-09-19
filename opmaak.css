@@ -49,3 +49,12 @@ margin-top: 0;
 font-size: 50px;
 }
 
+h2{ margin-left: 650px;
+padding: 100px;
+background-color: #60959e;
+border: 2px ;
+border-radius: 10px;
+text-align: center;
+font-size: 25px;
+width: 300px;
+}
