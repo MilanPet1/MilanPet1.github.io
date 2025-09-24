@@ -65,7 +65,7 @@ iframe{
 .container {
   position: relative;
   width: 50%;
-  margin-left: 220px; /* Zet rechts van de sidebar */
+  margin-left: 400px; /* Zet rechts van de sidebar */
   margin-top: 20px;
 }
 
