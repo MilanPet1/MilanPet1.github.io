@@ -44,7 +44,7 @@ box-shadow: #555555;
 
 header {
 
-  margin-left: 220px;
+margin-left: 220px;
 text-align: center;
 padding: 0;
 margin-top: 0;
@@ -54,4 +54,8 @@ font-size: 50px;
 iframe{
  width: 700px;
  height: 500px;
+}
+
+img{
+margin-left: 575px;
 }
