@@ -130,7 +130,7 @@ body {
   display: block;
   text-align: center;
 }
-.c {
+.d {
   width: 250px;        /* maakt hem kleiner */
   height: auto;        /* behoudt juiste verhoudingen */
   display: inline-block;
