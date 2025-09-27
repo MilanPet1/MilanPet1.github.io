@@ -116,7 +116,8 @@ iframe {
   line-height: 1.5; 
 }*/
 /* Algemene achtergrond */
-
+/* Media Queries voor mobiel */
+@media (max-width: 768px) {
 body {
   background-color: #377781;
   margin: 0;
@@ -236,8 +237,6 @@ iframe {
   line-height: 1.5;
 }
 
-/* Media Queries voor mobiel */
-@media (max-width: 768px) {
   ul {
     position: static;
     width: 100%;
@@ -271,4 +270,5 @@ iframe {
   height: auto;       /* behoudt verhoudingen */
   border-radius: 10px;
   object-fit: cover;
+}
 }
