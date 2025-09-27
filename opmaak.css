@@ -237,6 +237,9 @@ iframe {
   line-height: 1.5;
 }
 
+/* Media Queries voor mobiel */
+@media (max-width: 768px)
+
   ul {
     position: static;
     width: 100%;
@@ -249,10 +252,6 @@ iframe {
   p {
     font-size: 1.2rem;
     padding: 15px;
-  }
-
-  iframe {
-    height: 250px;
   }
 
  .fotovak {
