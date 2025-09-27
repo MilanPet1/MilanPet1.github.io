@@ -265,8 +265,8 @@ iframe {
 }
 
 .fotovak img {
-  width: 100px;       /* maakt de foto passend */
-  height: auto;       /* behoudt verhoudingen */
+  width: auto;       /* maakt de foto passend */
+  height: 50px;       /* behoudt verhoudingen */
   border-radius: 10px;
   object-fit: cover;
 }
