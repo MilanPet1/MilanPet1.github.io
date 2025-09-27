@@ -207,7 +207,7 @@ iframe {
   height: auto;
   border-radius: 10px;
 }
-
+/*
 .image2 {
   margin: auto;
   max-width: 300px;
@@ -225,16 +225,37 @@ iframe {
 
 .side-by-side {
     display: flex;
-    justify-content: center; /* Horizontaal centreren */
-    align-items: center;     /* Verticaal centreren */
-    gap: 5px;               /* Ruimte tussen tekst en afbeelding */
-    flex-wrap: wrap;         /* Voor mobiele schermen: onder elkaar als te klein */
+    justify-content: center; 
+    align-items: center;    
+    gap: 5px;               
+    flex-wrap: wrap;         
 }
 
 .side-by-side p {
-    max-width: 400px; /* Zorg dat tekst niet te breed wordt */
+    max-width: 400px; 
+}
+*/
+.side-by-side {
+    display: flex;
+    justify-content: center;   /* Horizontaal centreren */
+    align-items: flex-start;   /* Bovenkant van items uitlijnen */
+    gap: 20px;                 /* Ruimte tussen tekst en foto */
+    flex-wrap: wrap;           /* Mobiel: onder elkaar als te smal */
 }
 
+.side-by-side p {
+    max-width: 400px;          /* Beperk de breedte van tekst */
+    margin: 0;                 /* Geen extra marge rondom */
+    padding: 15px;             /* Optionele padding binnen de p */
+}
+
+.image2 {
+    max-width: 200px;          /* Breedte van afbeelding */
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px #55555555;
+    
 .overlay {
   position: absolute;
   top: 0;
