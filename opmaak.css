@@ -209,6 +209,7 @@ iframe {
 }
 
 .image2 {
+  margin: auto;
   max-width: 200px;
   height: auto;
   border-radius: 10px;
