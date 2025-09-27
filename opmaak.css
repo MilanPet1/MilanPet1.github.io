@@ -211,6 +211,15 @@ iframe {
 .image2 {
   max-width: 200px;
   height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  background-color: #60959e;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px #55555555;
 }
 
 .overlay {
