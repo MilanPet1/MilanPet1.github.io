@@ -252,12 +252,7 @@ iframe {
     box-sizing: border-box;   /* zorgt dat padding niet de breedte verpest */
     text-align: center;       /* optioneel, tekst centreren */
 }
-.image2 {
-    max-width: 300px;          /* Breedte van afbeelding */
-    height: auto;
-    border-radius: 10px;
-    padding: 10px;
-}
+
 
 .side-by-side-2 {
     display: flex;               
@@ -273,6 +268,14 @@ iframe {
     margin: 0;
     padding: 20px;
     text-align: left;
+}
+.side-by-side-2 .image2 {
+    flex: 1;                     /* Foto neemt minder ruimte in */
+    max-width: 200px;            /* Breedte van foto blijft beperkt */
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px #55555555;
 }
 .overlay {
   position: absolute;
