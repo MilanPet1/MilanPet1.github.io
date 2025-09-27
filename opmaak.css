@@ -253,25 +253,8 @@ iframe {
     text-align: center;       /* optioneel, tekst centreren */
 }
 
-
-.side-by-side-2 {
-    display: flex;               
-    justify-content: center;     /* Horizontaal centreren */
-    align-items: flex-start;     /* Bovenkant uitlijnen, geen gelijke hoogte */
-    gap: 30px;                   /* Ruimte tussen tekst en foto */
-    flex-wrap: wrap;             /* Op mobiel onder elkaar zetten */
-}
-
-.side-by-side-2 p {
-    flex: 2;                     /* Tekst neemt meer ruimte in dan foto */
-    max-width: 600px;            /* Voorkom dat tekst te breed wordt */
-    margin: 0;
-    padding: 20px;
-    text-align: left;
-}
-.side-by-side-2image2 {
-    flex: 1;                     /* Foto neemt minder ruimte in */
-    max-width: 200px;            /* Breedte van foto blijft beperkt */
+.image2 {
+    max-width: 200px;  /* foto blijft kleiner */
     height: auto;
     border-radius: 10px;
     padding: 10px;
