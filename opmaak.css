@@ -146,7 +146,7 @@ ul {
   text-align: center;
 }
 
-ul li a.active {
+ul li a:active {
   background-color: grey;
   border-radius: 4px;
 }
