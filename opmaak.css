@@ -223,6 +223,18 @@ iframe {
   box-shadow: 0 4px 8px #55555555;
 }
 
+.side-by-side {
+    display: flex;
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center;     /* Verticaal centreren */
+    gap: 20px;               /* Ruimte tussen tekst en afbeelding */
+    flex-wrap: wrap;         /* Voor mobiele schermen: onder elkaar als te klein */
+}
+
+.side-by-side p {
+    max-width: 400px; /* Zorg dat tekst niet te breed wordt */
+}
+
 .overlay {
   position: absolute;
   top: 0;
