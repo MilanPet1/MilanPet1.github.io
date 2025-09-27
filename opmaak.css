@@ -1,4 +1,4 @@
-body{background-color: #377781;} 
+/*body{background-color: #377781;} 
 
 .b{
   margin-left: 440px;
@@ -114,4 +114,146 @@ iframe {
   font-size: 18px;
   text-align: center;
   line-height: 1.5; 
+}*/
+/* Algemene achtergrond */
+body {
+  background-color: #377781;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
+/* Buttons / extra klassen */
+.b, .c {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+/* Sidebar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #60959e;
+  height: 96%;
+  position: fixed;
+  border: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Sidebar links */
+ul li a::after {
+  background-color: #ffffff;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555555;
+  color: white;
+}
+
+/* Tekstblokken */
+p {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #60959e;
+  border: 2px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 500px;
+  width: 80%;
+  box-shadow: 0 4px 8px #55555555;
+}
+
+/* Header */
+header {
+  margin: 0 auto;
+  text-align: center;
+  font-size: clamp(24px, 5vw, 50px);
+  padding-top: 10px;
+}
+
+/* Iframe responsief maken */
+iframe {
+  max-width: 100%;
+  width: 700px;
+  height: 400px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Container met overlay */
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 140, 186, 0.85);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Media Queries voor mobiel */
+@media (max-width: 768px) {
+  ul {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
