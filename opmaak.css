@@ -146,9 +146,10 @@ ul {
   text-align: center;
 }
 
-ul li a:active {
-  background-color: grey;
-  border-radius: 4px;
+ul li a.active {
+    background-color: #555555;  /* grijs blokje */
+    color: white;               /* tekstkleur aanpassen */
+    border-radius: 5px;         /* optioneel, afgeronde hoeken */
 }
 
 li a {
