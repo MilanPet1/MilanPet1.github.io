@@ -116,6 +116,7 @@ iframe {
   line-height: 1.5; 
 }*/
 /* Algemene achtergrond */
+
 body {
   background-color: #377781;
   margin: 0;
@@ -129,8 +130,17 @@ body {
   display: block;
   text-align: center;
 }
-
+.c {
+  width: 250px;        /* maakt hem kleiner */
+  height: auto;        /* behoudt juiste verhoudingen */
+  display: inline-block;
+  vertical-align: top; /* zorgt dat hij gelijk staat met de bovenkant van de tekst */
+  margin-left: 20px;   /* ruimte tussen tekst en foto */
+  border-radius: 10px; /* mooie afgeronde hoeken */
+  box-shadow: 0 4px 8px #55555555;
+  object-fit: cover;
 /* Sidebar */
+}
 ul {
   list-style-type: none;
   margin: 0;
