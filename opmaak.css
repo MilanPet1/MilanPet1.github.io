@@ -260,7 +260,7 @@ iframe {
 }
 
 .side-by-side2 p {
-    max-width: 400px;         /* optioneel, voorkomt dat ze te breed worden */
+    max-width: 600px;         /* optioneel, voorkomt dat ze te breed worden */
     margin: 0;                /* verwijder extra marge */
     padding: 20px;            /* binnenruimte */
     box-sizing: border-box;   /* zorgt dat padding niet de breedte verpest */
