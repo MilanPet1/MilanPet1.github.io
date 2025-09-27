@@ -273,10 +273,14 @@ iframe {
     padding: 20px;
     text-align: left;
 }
-
-.side-by-side-loose .image2 {
-    max-width: 200px;  /* foto blijft kleiner */
+ 
+.side-by-side-loose .imgkleurmodel {
+    max-width: 150px;  /* foto blijft kleiner */
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
 }
 
 .overlay {
