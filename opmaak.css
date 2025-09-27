@@ -269,7 +269,7 @@ iframe {
     padding: 20px;
     text-align: left;
 }
-.side-by-side-2 .image2 {
+.side-by-side-2image2 {
     flex: 1;                     /* Foto neemt minder ruimte in */
     max-width: 200px;            /* Breedte van foto blijft beperkt */
     height: auto;
