@@ -130,15 +130,7 @@ body {
   display: block;
   text-align: center;
 }
-.d {
-  float: right;        /* zet de foto aan de rechterkant */
-  width: 250px;        /* maakt hem kleiner */
-  height: auto;        /* houdt juiste verhoudingen */
-  margin: 20px; /* ruimte onder en links van de foto */
-  border-radius: 10px; /* mooie afgeronde hoeken */
-  box-shadow: 0 4px 8px #55555555;
-  object-fit: cover;
-}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -269,4 +261,12 @@ iframe {
   height: auto;
   border-radius: 10px;
   object-fit: cover;
+  float: right;        /* zet de foto aan de rechterkant */
+  width: 250px;        /* maakt hem kleiner */
+  height: auto;        /* houdt juiste verhoudingen */
+  margin: 20px; /* ruimte onder en links van de foto */
+  border-radius: 10px; /* mooie afgeronde hoeken */
+  box-shadow: 0 4px 8px #55555555;
+  object-fit: cover;
+}
 }
