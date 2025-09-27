@@ -250,7 +250,7 @@ iframe {
     padding: 20px;            /* binnenruimte */
     box-sizing: border-box;   /* zorgt dat padding niet de breedte verpest */
     text-align: center;       /* optioneel, tekst centreren */
-
+}
 .image2 {
     max-width: 300px;          /* Breedte van afbeelding */
     height: auto;
