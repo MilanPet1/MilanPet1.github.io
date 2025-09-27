@@ -245,6 +245,7 @@ iframe {
 
 .side-by-side p {
     max-width: 400px;          /* Beperk de breedte van tekst */
+    max-height: 300px;
     margin: 0;                 /* Geen extra marge rondom */
     padding: 15px;             /* Optionele padding binnen de p */
 }
