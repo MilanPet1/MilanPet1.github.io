@@ -264,6 +264,11 @@ iframe {
   line-height: 1.5;
 }
 
+.centered {
+    margin: 20px auto;  /* horizontaal centreren */
+    text-align: center;
+}
+
 /* Media Queries voor mobiel */
 @media (max-width: 768px){
 
