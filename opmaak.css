@@ -263,5 +263,10 @@ iframe {
   iframe {
     height: 250px;
   }
-}
 
+  .fotovak img {
+  width: 250px; /* maak de foto passend */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
