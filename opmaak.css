@@ -147,9 +147,9 @@ ul {
 }
 
 ul li a.active {
-    background-color: #555555;  /* grijs blokje */
-    color: white;               /* tekstkleur aanpassen */
-    border-radius: 5px;         /* optioneel, afgeronde hoeken */
+    background-color: #60959e;  
+    color: white;               
+    border-radius: 5px;        
 }
 
 li a {
