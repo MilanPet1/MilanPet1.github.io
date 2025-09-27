@@ -253,7 +253,7 @@ iframe {
     text-align: center;       /* optioneel, tekst centreren */
 }
 .image2 {
-    max-width: 250px;          /* Breedte van afbeelding */
+    max-width: 400px;          /* Breedte van afbeelding */
     height: auto;
     border-radius: 10px;
     padding: 10px;
