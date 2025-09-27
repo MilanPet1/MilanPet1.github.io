@@ -258,6 +258,27 @@ iframe {
     border-radius: 10px;
     padding: 10px;
 }
+
+.side-by-side-loose {
+    display: flex;
+    justify-content: center;  /* horizontaal centreren */
+    align-items: flex-start;  /* tekst en foto bovenaan uitlijnen, niet gelijk maken */
+    gap: 20px;                /* ruimte tussen tekst en foto */
+    flex-wrap: wrap;          /* mobiel: onder elkaar als te smal */
+}
+
+.side-by-side-loose p {
+    max-width: 500px;  /* tekstblok kan groter zijn dan foto */
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+}
+
+.side-by-side-loose .image2 {
+    max-width: 200px;  /* foto blijft kleiner */
+    height: auto;
+}
+
 .overlay {
   position: absolute;
   top: 0;
