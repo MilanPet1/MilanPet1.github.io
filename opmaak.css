@@ -237,17 +237,19 @@ iframe {
 */
 .side-by-side {
     display: flex;
-    justify-content: center;   /* Horizontaal centreren */
-    align-items: flex-start;   /* Bovenkant van items uitlijnen */
-    gap: 20px;                 /* Ruimte tussen tekst en foto */
-    flex-wrap: wrap;           /* Mobiel: onder elkaar als te smal */
+    justify-content: center;  /* horizontaal centreren */
+    align-items: stretch;     /* dit zorgt dat alle flex-items dezelfde hoogte krijgen */
+    gap: 20px;                /* ruimte tussen blokken */
+    flex-wrap: wrap;          /* mobiel: onder elkaar als te smal */
 }
 
 .side-by-side p {
-    max-width: 400px;          /* Beperk de breedte van tekst */
-    margin: 0;                 /* Geen extra marge rondom */
-    padding: 15px;             /* Optionele padding binnen de p */
-}
+    flex: 1;                  /* elk p-element neemt evenveel ruimte */
+    max-width: 400px;         /* optioneel, voorkomt dat ze te breed worden */
+    margin: 0;                /* verwijder extra marge */
+    padding: 20px;            /* binnenruimte */
+    box-sizing: border-box;   /* zorgt dat padding niet de breedte verpest */
+    text-align: center;       /* optioneel, tekst centreren */
 
 .image2 {
     max-width: 300px;          /* Breedte van afbeelding */
