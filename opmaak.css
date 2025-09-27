@@ -134,7 +134,7 @@ body {
   float: right;        /* zet de foto aan de rechterkant */
   width: 250px;        /* maakt hem kleiner */
   height: auto;        /* houdt juiste verhoudingen */
-  margin: 0 0 20px 20px; /* ruimte onder en links van de foto */
+  margin: 20px; /* ruimte onder en links van de foto */
   border-radius: 10px; /* mooie afgeronde hoeken */
   box-shadow: 0 4px 8px #55555555;
   object-fit: cover;
