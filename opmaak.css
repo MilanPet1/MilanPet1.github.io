@@ -250,12 +250,12 @@ iframe {
 }
 
 .image2 {
-    max-width: 200px;          /* Breedte van afbeelding */
+    max-width: 300px;          /* Breedte van afbeelding */
     height: auto;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 4px 8px #55555555;
-    
+
 .overlay {
   position: absolute;
   top: 0;
