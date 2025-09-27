@@ -131,15 +131,13 @@ body {
   text-align: center;
 }
 .d {
+  float: right;        /* zet de foto aan de rechterkant */
   width: 250px;        /* maakt hem kleiner */
-  height: auto;        /* behoudt juiste verhoudingen */
-  display: inline-block;
-  vertical-align: top; /* zorgt dat hij gelijk staat met de bovenkant van de tekst */
-  margin-left: 20px;   /* ruimte tussen tekst en foto */
+  height: auto;        /* houdt juiste verhoudingen */
+  margin: 0 0 20px 20px; /* ruimte onder en links van de foto */
   border-radius: 10px; /* mooie afgeronde hoeken */
   box-shadow: 0 4px 8px #55555555;
   object-fit: cover;
-/* Sidebar */
 }
 ul {
   list-style-type: none;
