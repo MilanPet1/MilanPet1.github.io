@@ -1,9 +1,13 @@
-/*body{background-color: #377781;} 
+/* ================================================
+   OUDE CODE (BEWAARD MAAR UITGEZET)
+   Dit was mijn eerste versie van de CSS.
+   Ik heb deze verbeterd om de site responsiever en overzichtelijker te maken.
+==================================================
+body{background-color: #377781;} 
 
 .b{
   margin-left: 440px;
 }
-
 
 .c {
 margin-left: 775px;
@@ -67,10 +71,7 @@ font-size: 50px;
 iframe {
  width: 700px;
  height: 500px;
- 
 }
-
-
 
 .container {
   position: relative;
@@ -78,53 +79,23 @@ iframe {
   margin-left: 500px; 
   margin-top: 20px;
 }
+================================================== */
 
-.image {
-  margin-left: 0;
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: rgba(0, 140, 186, 0.85);
-  border-radius: 10px;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
+/* ================================================
+   NIEUWE / VERBETERDE CSS
+   Duidelijkere structuur, responsiever en nettere code
+================================================== */
 
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.5; 
-}*/
-/* Algemene achtergrond */
-/* Media Queries voor mobiel */
-
+/* Algemene stijl voor de hele site */
 body {
   background-color: #377781;
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Buttons / extra klassen */
+/* Buttons / extra klassen
+   b en c worden gebruikt om bepaalde knoppen te centreren */
 .b, .c {
   margin-left: auto;
   margin-right: auto;
@@ -132,6 +103,7 @@ body {
   text-align: center;
 }
 
+/* Navigatiemenu links */
 ul {
   list-style-type: none;
   margin: 0;
@@ -141,15 +113,14 @@ ul {
   background-color: #60959e;
   height: 96%;
   position: fixed;
-  border: 5px;
   border-radius: 10px;
   text-align: center;
 }
 
 ul li a.active {
-    background-color: #60959e;  
-    color: white;               
-    border-radius: 5px;        
+  background-color: #60959e;  
+  color: white;               
+  border-radius: 5px;        
 }
 
 li a {
@@ -164,12 +135,11 @@ li a:hover {
   color: white;
 }
 
-/* Tekstblokken */
+/* Tekstblokken (algemene paragrafen) */
 p {
   margin: 20px auto;
   padding: 20px;
   background-color: #60959e;
-  border: 2px;
   border-radius: 10px;
   text-align: center;
   font-size: 1.5rem;
@@ -178,11 +148,11 @@ p {
   box-shadow: 0 4px 8px #55555555;
 }
 
-/* Header */
+/* Pagina header (titel bovenaan) */
 header {
   margin: 0 auto;
   text-align: center;
-  font-size: clamp(24px, 5vw, 50px);
+  font-size: clamp(24px, 5vw, 50px); /* schaal mee met schermbreedte */
   padding-top: 10px;
 }
 
@@ -195,7 +165,7 @@ iframe {
   margin: 20px auto;
 }
 
-/* Container met overlay */
+/* Container met overlay effect voor afbeeldingen */
 .container {
   position: relative;
   max-width: 700px;
@@ -209,58 +179,7 @@ iframe {
   height: auto;
   border-radius: 10px;
 }
-/*
-.image2 {
-  margin: auto;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-  background-color: #60959e;
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px #55555555;
-}
 
-.side-by-side {
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    gap: 5px;               
-    flex-wrap: wrap;         
-}
-
-.side-by-side p {
-    max-width: 400px; 
-}
-*/
-.side-by-side {
-    display: flex;
-    justify-content: center;  /* horizontaal centreren */
-    align-items: stretch;     /* dit zorgt dat alle flex-items dezelfde hoogte krijgen */
-    gap: 20px;                /* ruimte tussen blokken */
-    flex-wrap: wrap;          /* mobiel: onder elkaar als te smal */
-}
-
-.side-by-side p {
-    flex: 1;                  /* elk p-element neemt evenveel ruimte */
-    max-width: 550px;         /* optioneel, voorkomt dat ze te breed worden */
-    margin: 0;                /* verwijder extra marge */
-    padding: 20px;            /* binnenruimte */
-    box-sizing: border-box;   /* zorgt dat padding niet de breedte verpest */
-    text-align: center;       /* optioneel, tekst centreren */
-}
-
-.image2 {
-    max-width: 400px;  /* foto blijft kleiner */
-    height: auto;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 8px #55555555;
-}
 .overlay {
   position: absolute;
   top: 0;
@@ -290,14 +209,42 @@ iframe {
   line-height: 1.5;
 }
 
-.centered {
-    margin: 20px auto;  /* horizontaal centreren */
-    text-align: center;
+/* Layout waarbij tekst en afbeelding naast elkaar staan */
+.side-by-side {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap; /* mobiel: onder elkaar */
 }
 
-/* Media Queries voor mobiel */
-@media (max-width: 768px){
+.side-by-side p {
+  flex: 1;
+  max-width: 550px;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
+.image2 {
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px #55555555;
+}
+
+.centered {
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* ================================================
+   MEDIA QUERIES VOOR MOBIELE APPARATEN
+   Past layout aan bij kleine schermen
+================================================== */
+@media (max-width: 768px) {
   ul {
     position: static;
     width: 100%;

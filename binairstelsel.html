@@ -1,40 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binair stelsel</title>
     <link rel="stylesheet" href="opmaak.css">
 </head>
 <body id="binback">
 
-  <ul>
-    <li><a href="index.html" class="block-link"> Home</a></li>
-    <li><a href="invoer-verwerking-uitvoer.html" class="block-link"> Invoer-verwerking-uitvoer </a></li>
-    <li><a href="binairstelsel.html" class="block-link"> Binair stelsel </a></li>
-    <li><a href="spelletje.html"  class="block-link"> Binair stelsel spelletje </a></li>
-    <li><a href="kleurmodel.html" class="block-link"> Kleurmodel </a></li>
-    <li><a href="compressie.html" class="block-link"> Compressie </a></li>
-  </ul>
+    <!-- Navigatiebalk -->
+    <ul>
+        <li><a href="index.html" class="block-link">Home</a></li>
+        <li><a href="invoer-verwerking-uitvoer.html" class="block-link">Invoer-verwerking-uitvoer</a></li>
+        <li><a href="binairstelsel.html" class="block-link active">Binair stelsel</a></li>
+        <li><a href="spelletje.html" class="block-link">Binair stelsel spelletje</a></li>
+        <li><a href="kleurmodel.html" class="block-link">Kleurmodel</a></li>
+        <li><a href="compressie.html" class="block-link">Compressie</a></li>
+    </ul>
 
-  
-  <header> Binair stelsel</header>
+    <main>
+        <header>
+            <h1>Binair stelsel</h1>
+        </header>
 
- 
-  <div class="container">
-    <image src="images/binairstelsel.jpg" alt="Binaire afbeelding" class="image">
-    <div class="overlay">
-      <div class="text">
-        Het binaire stelsel is een manier van tellen met maar twee cijfers: 0 en 1. 
-        In ons gewone tellen gebruiken we de cijfers 0 tot en met 9, maar bij binair gebruiken we alleen 0 en 1.
-        Elke plek in een binair getal heeft een waarde die steeds twee keer zo groot wordt. 
-        De laatste plek rechts is 1 waard, de plek daarvoor is 2 waard, dan 4, dan 8, en zo verder.
-        Als er een 1 staat, tel je die waarde mee. Staat er een 0, dan niet. 
-        Zo betekent 1011 dat je 8 + 2 + 1 optelt. Dat is 11 in ons gewone tellen.
-        Computers gebruiken dit systeem omdat ze heel goed kunnen werken met alleen twee standen: aan en uit.
-        Aan wordt een 1, uit wordt een 0. 
-        Door heel veel nullen en enen te combineren kan een computer alles laten zien wat je wilt: tekst, plaatjes, filmpjes en muziek.
-      </div>
-    </div>
-  </div>
+        <!-- Afbeelding + uitleg met overlay -->
+        <div class="container">
+            <!-- Verbeterd: <img> ipv <image> -->
+            <img src="images/binairstelsel.jpg" alt="Binaire afbeelding" class="image">
+            
+            <!-- Overlay met uitleg -->
+            <div class="overlay">
+                <div class="text">
+                    Het binaire stelsel is een manier van tellen met maar twee cijfers: 0 en 1.
+                    In ons gewone tellen gebruiken we de cijfers 0 tot en met 9, maar bij binair gebruiken we alleen 0 en 1.
+                    Elke plek in een binair getal heeft een waarde die steeds twee keer zo groot wordt.
+                    De laatste plek rechts is 1 waard, de plek daarvoor 2, dan 4, dan 8, enzovoort.
+                    Als er een 1 staat, tel je die waarde mee. Staat er een 0, dan niet.
+                    Zo betekent 1011 dat je 8 + 2 + 1 optelt = 11 in ons gewone tellen.
+                    Computers gebruiken dit systeem omdat ze werken met twee standen: aan en uit.
+                    Aan = 1, uit = 0. Door heel veel nullen en enen te combineren kan een computer alles maken:
+                    tekst, plaatjes, filmpjes en muziek.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="centered">
+        <p>Gemaakt door Milan</p>
+    </footer>
 
 </body>
 </html>
