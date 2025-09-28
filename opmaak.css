@@ -140,6 +140,7 @@ iframe {
   text-align: center;
 }
 
+/* Opmaak van foto van mijzelf*/
 .image2 {
   max-width: 400px;
   height: auto;
@@ -148,6 +149,7 @@ iframe {
   box-shadow: 0 4px 8px #55555555;
 }
 
+/* Centreren van objecten*/
 .centered {
   margin: 20px auto;
   text-align: center;
@@ -189,7 +191,7 @@ footer p {
   margin: 0;
 }
 
-/* Dingen voor de tabel van binairstelsel */
+/* Opmaak voor tabel van binairstelsel */
 table {
     margin: 20px auto;
     border-collapse: collapse;
