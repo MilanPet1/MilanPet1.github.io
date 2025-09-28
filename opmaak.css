@@ -255,15 +255,22 @@ header h1 {
 
 /* === Footer netjes maken === */
 footer {
-  background-color: #2c5d63;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 40px;
-  border-top: 2px solid #60959e;
-  font-size: 0.9rem;
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    background-color: #2c5d63;
+    color: white;
+    text-align: center;         /* horizontaal centreren */
+    padding: 15px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #60959e;
+    font-size: 0.9rem;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+
+    /* Flexbox voor perfecte centrering */
+    display: flex;
+    justify-content: center;    /* horizontaal */
+    align-items: center;        /* verticaal */
 }
+
 
 footer p {
   margin: 0;
