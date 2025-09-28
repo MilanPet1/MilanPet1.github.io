@@ -8,7 +8,7 @@
 </head>
 <body id="binback">
 
-    <!-- Navigatiebalk -->
+  
     <ul>
         <li><a href="index.html" class="block-link">Home</a></li>
         <li><a href="invoer-verwerking-uitvoer.html" class="block-link">Invoer-verwerking-uitvoer</a></li>
@@ -18,32 +18,56 @@
         <li><a href="compressie.html" class="block-link">Compressie</a></li>
     </ul>
 
-    <main>
-        <header>
-            <h1>Binair stelsel</h1>
-        </header>
+<main>
+    <header>
+        <h1>Binair stelsel</h1>
+    </header>
 
-        <!-- Afbeelding + uitleg met overlay -->
-        <div class="container">
-            <!-- Verbeterd: <img> ipv <image> -->
-            <img src="images/binairstelsel.jpg" alt="Binaire afbeelding" class="image">
-            
-            <!-- Overlay met uitleg -->
-            <div class="overlay">
-                <div class="text">
-                    Het binaire stelsel is een manier van tellen met maar twee cijfers: 0 en 1.
-                    In ons gewone tellen gebruiken we de cijfers 0 tot en met 9, maar bij binair gebruiken we alleen 0 en 1.
-                    Elke plek in een binair getal heeft een waarde die steeds twee keer zo groot wordt.
-                    De laatste plek rechts is 1 waard, de plek daarvoor 2, dan 4, dan 8, enzovoort.
-                    Als er een 1 staat, tel je die waarde mee. Staat er een 0, dan niet.
-                    Zo betekent 1011 dat je 8 + 2 + 1 optelt = 11 in ons gewone tellen.
-                    Computers gebruiken dit systeem omdat ze werken met twee standen: aan en uit.
-                    Aan = 1, uit = 0. Door heel veel nullen en enen te combineren kan een computer alles maken:
-                    tekst, plaatjes, filmpjes en muziek.
-                </div>
+    <div class="container">
+        <img src="images/binairstelsel.jpg" alt="Binaire afbeelding" class="image">
+        <div class="overlay">
+            <div class="text">
+                Het binaire stelsel is een manier van tellen met maar twee cijfers: 0 en 1.
+                In ons gewone tellen gebruiken we de cijfers 0 tot en met 9, maar bij binair gebruiken we alleen 0 en 1.
+                Elke plek in een binair getal heeft een waarde die steeds twee keer zo groot wordt.
+                De laatste plek rechts is 1 waard, de plek daarvoor 2, dan 4, dan 8, enzovoort.
+                Als er een 1 staat, tel je die waarde mee. Staat er een 0, dan niet.
+                Zo betekent 1011 dat je 8 + 2 + 1 optelt = 11 in ons gewone tellen.
+                Computers gebruiken dit systeem omdat ze werken met twee standen: aan en uit.
+                Aan = 1, uit = 0. Door heel veel nullen en enen te combineren kan een computer alles maken:
+                tekst, plaatjes, filmpjes en muziek.
             </div>
         </div>
-    </main>
+    </div>
+
+    <!-- ASCII-tabel toevoegen direct hier -->
+    <section class="centered">
+        <h2>ASCII-tabel</h2>
+        <p>De ASCII-tabel laat zien hoe tekens worden vertaald naar getallen zodat een computer ze kan begrijpen.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Teken</th>
+                    <th>ASCII-code (decimaal)</th>
+                    <th>Binair</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>A</td><td>65</td><td>01000001</td></tr>
+                <tr><td>B</td><td>66</td><td>01000010</td></tr>
+                <tr><td>C</td><td>67</td><td>01000011</td></tr>
+                <tr><td>a</td><td>97</td><td>01100001</td></tr>
+                <tr><td>b</td><td>98</td><td>01100010</td></tr>
+                <tr><td>0</td><td>48</td><td>00110000</td></tr>
+                <tr><td>1</td><td>49</td><td>00110001</td></tr>
+                <tr><td>!</td><td>33</td><td>00100001</td></tr>
+                <tr><td>spatie</td><td>32</td><td>00100000</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
 
     <footer class="centered">
         <p>Gemaakt door Milan Pet
