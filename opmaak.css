@@ -1,288 +1,250 @@
 /* Algemene stijl voor de hele site */
 body {
-  background-color: #377781;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  overflow-x: hidden; /* Geen verschuiving horizontaal*/
+  background-color: #377781;   /* achtergrondkleur site */
+  margin: 0;                   /* standaardmarges weghalen */
+  font-family: Arial, sans-serif; /* lettertype */
+  overflow-x: hidden;          /* geen horizontaal scrollen */
 }
 
-
-
-/* Buttons / extra klassen
-   b en c worden gebruikt om bepaalde knoppen te centreren */
+/* Buttons / extra klassen om te centreren */
 .b, .c {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: center;
+  margin-left: auto;           /* links automatisch -> centreren */
+  margin-right: auto;          /* rechts automatisch -> centreren */
+  display: block;              /* blokweergave */
+  text-align: center;          /* tekst centreren */
 }
 
 /* Navigatiemenu links */
 ul {
-  list-style-type: none;
-  margin: 0;
-  margin-top: 5px;
-  padding: 0;
-  width: 200px;
-  background-color: #60959e;
-  height: 96%;
-  position: fixed;
-  border-radius: 10px;
-  text-align: center;
+  list-style-type: none;       /* geen bolletjes */
+  margin: 0;                   /* geen standaard marge */
+  margin-top: 5px;             /* kleine ruimte boven */
+  padding: 0;                  /* padding weghalen */
+  width: 200px;                /* breedte menu */
+  background-color: #60959e;   /* achtergrondkleur */
+  height: 96%;                 /* bijna volledige schermhoogte */
+  position: fixed;             /* blijft staan bij scrollen */
+  border-radius: 10px;         /* afgeronde hoeken */
+  text-align: center;          /* tekst in midden */
 }
 
+/* Actieve link in menu */
 ul li a.active {
-  background-color: #434444;  
-  color: white;               
-  border-radius: 5px;        
+  background-color: #434444;   /* donkere achtergrond */
+  color: white;                /* witte tekst */
+  border-radius: 5px;          /* afgeronde hoeken */
 }
 
+/* Links in menu */
 li a {
-  display: block;
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
+  display: block;              /* hele regel klikbaar */
+  color: black;                /* zwarte tekst */
+  padding: 8px 16px;           /* ruimte rond tekst */
+  text-decoration: none;       /* geen onderlijning */
 }
 
 li a:hover {
-  background-color: #555555;
-  color: white;
+  background-color: #555555;   /* donkere achtergrond bij hover */
+  color: white;                /* witte tekst bij hover */
 }
 
 /* Tekstblokken */
 p {
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #60959e;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 1.5rem;
-  max-width: 500px;
-  width: 80%;
-  box-shadow: 0 4px 8px #55555555;
+  margin: 20px auto;           /* centreren met marge */
+  padding: 20px;               /* binnenruimte */
+  background-color: #60959e;   /* achtergrondkleur */
+  border-radius: 10px;         /* afgeronde hoeken */
+  text-align: center;          /* tekst centreren */
+  font-size: 1.5rem;           /* grotere tekst */
+  max-width: 500px;            /* maximale breedte */
+  width: 80%;                  /* breedte op scherm */
+  box-shadow: 0 4px 8px #55555555; /* schaduw */
 }
 
-/* Pagina header (titel bovenaan) */
+/* Pagina header */
 header {
-  margin: 0 auto;
-  text-align: center;
-  font-size: clamp(24px, 5vw, 50px); /* schaal mee met schermbreedte */
-  padding-top: 10px;
+  margin: 0 auto;              /* centreren */
+  text-align: center;          /* tekst centreren */
+  font-size: clamp(24px, 5vw, 50px); /* schaal mee met scherm */
+  padding-top: 10px;           /* ruimte boven */
 }
 
-/* Opmaak voor het spelletje */
+/* Titel in header */
+header h1 {
+  font-size: clamp(28px, 5vw, 48px); /* responsief formaat */
+  text-align: center;          /* centreren */
+  color: white;                /* witte tekst */
+  background-color: #2c5d63;   /* achtergrondkleur */
+  padding: 15px 20px;          /* binnenruimte */
+  border-radius: 10px;         /* afgeronde hoeken */
+  margin: 20px auto;           /* marge rondom */
+  max-width: 800px;            /* maximale breedte */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* schaduw */
+}
+
+/* Iframe (spel) */
 iframe {
-  max-width: 100%;
-  width: 700px;
-  height: 500px;
-  display: block;
-  margin: 20px auto;
+  max-width: 100%;             /* past zich aan scherm aan */
+  width: 700px;                /* standaard breedte */
+  height: 500px;               /* standaard hoogte */
+  display: block;              /* blok-element */
+  margin: 20px auto;           /* gecentreerd */
 }
 
-/* Container met overlay effect voor binairstelsel afbeelding */
+/* Container voor afbeelding met overlay */
 .container {
-  position: relative;
-  max-width: 700px;
-  width: 90%;
-  margin: 20px auto;
+  position: relative;          /* nodig voor overlay */
+  max-width: 700px;            /* maximale breedte */
+  width: 90%;                  /* responsieve breedte */
+  margin: 20px auto;           /* centreren */
 }
 
 .image {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  display: block;              /* blok-element */
+  width: 100%;                 /* vult container */
+  height: auto;                /* proporties behouden */
+  border-radius: 10px;         /* afgeronde hoeken */
 }
 
-.side-by-side {
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    gap: 5px;               
-    flex-wrap: wrap;         
-}
-
-.side-by-side p {
-    max-width: 400px; 
-}
-*/
-.side-by-side {
-    display: flex;
-    justify-content: center;  /* horizontaal centreren */
-    align-items: stretch;     /* dit zorgt dat alle flex-items dezelfde hoogte krijgen */
-    gap: 20px;                /* ruimte tussen blokken */
-    flex-wrap: wrap;          /* mobiel: onder elkaar als te smal */
-}
-
-.side-by-side p {
-    flex: 1;                  /* elk p-element neemt evenveel ruimte */
-    max-width: 550px;         /* optioneel, voorkomt dat ze te breed worden */
-    margin: 0;                /* verwijder extra marge */
-    padding: 20px;            /* binnenruimte */
-    box-sizing: border-box;   /* zorgt dat padding niet de breedte verpest */
-    text-align: center;       /* optioneel, tekst centreren */
-}
-
-.image2 {
-    max-width: 400px;  /* foto blijft kleiner */
-    height: auto;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 8px #55555555;
-}
+/* Overlay die zichtbaar wordt bij hover */
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: rgba(0, 140, 186, 0.85);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  position: absolute;          /* bovenop de afbeelding */
+  top: 0; bottom: 0; left: 0; right: 0; /* volledige dekking */
+  height: 100%;                /* volledige hoogte */
+  width: 100%;                 /* volledige breedte */
+  opacity: 0;                   /* onzichtbaar standaard */
+  transition: 0.5s ease;       /* vloeiend tonen */
+  background-color: rgba(0, 140, 186, 0.85); /* semi-transparant */
+  border-radius: 10px;         /* afgeronde hoeken */
+  display: flex;               /* flexbox centreren */
+  justify-content: center;     /* horizontaal centreren */
+  align-items: center;         /* verticaal centreren */
+  padding: 20px;               /* binnenruimte */
 }
 
 .container:hover .overlay {
-  opacity: 1;
+  opacity: 1;                  /* overlay zichtbaar bij hover */
 }
 
+/* Tekst in overlay */
 .text {
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  line-height: 1.5;
+  color: white;                /* witte tekst */
+  font-size: 18px;             /* lettergrootte */
+  text-align: center;          /* tekst centreren */
+  line-height: 1.5;            /* regelafstand */
 }
 
-/* Layout waarbij tekst en afbeelding naast elkaar staan */
+/* Layout tekst naast afbeelding */
 .side-by-side {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 20px;
+  display: flex;               /* flexbox layout */
+  justify-content: center;     /* horizontaal centreren */
+  align-items: stretch;        /* gelijke hoogte items */
+  gap: 20px;                   /* ruimte ertussen */
+  flex-wrap: wrap;             /* op mobiel onder elkaar */
 }
 
 .side-by-side p {
-  flex: 1;
-  max-width: 550px;
-  margin: 0;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
+  flex: 1;                     /* evenveel ruimte per blok */
+  max-width: 550px;            /* niet te breed */
+  margin: 0;                   /* geen marge */
+  padding: 20px;               /* binnenruimte */
+  box-sizing: border-box;      /* padding telt mee */
+  text-align: center;          /* tekst centreren */
 }
 
-/* Opmaak van foto van mijzelf*/
+/* Foto-opmaak */
 .image2 {
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 8px #55555555;
+  max-width: 400px;            /* maximale breedte */
+  height: auto;                /* proporties behouden */
+  border-radius: 10px;         /* afgeronde hoeken */
+  padding: 10px;               /* binnenruimte */
+  box-shadow: 0 4px 8px #55555555; /* schaduw */
 }
 
-/* Centreren van objecten*/
+/* Centreren algemeen */
 .centered {
-  margin: 20px auto;
-  text-align: center;
+  margin: 20px auto;           /* marge + centreren */
+  text-align: center;          /* tekst centreren */
 }
 
-/* Opmaak voor de header */
-header h1 {
-  font-size: clamp(28px, 5vw, 48px); /* past zich aan schermgrootte aan */
-  text-align: center;
-  color: white;
-  background-color: #2c5d63;
-  padding: 15px 20px;
-  border-radius: 10px;
-  margin: 20px auto;
-  max-width: 800px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-/* Opmaak footer */
+/* Footer */
 footer {
-    background-color: #2c5d63;
-    color: white;
-    text-align: center;         /* horizontaal centreren */
-    padding: 15px 20px;
-    margin-top: 40px;
-    border-top: 2px solid #60959e;
-    font-size: 0.9rem;
-    width: 100%;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  background-color: #2c5d63;   /* achtergrondkleur */
+  color: white;                /* witte tekst */
+  text-align: center;          /* centreren */
+  padding: 15px 20px;          /* binnenruimte */
+  margin-top: 40px;            /* ruimte boven */
+  border-top: 2px solid #60959e; /* bovenrand */
+  font-size: 0.9rem;           /* kleinere tekst */
+  width: 100%;                 /* volledige breedte */
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.2); /* schaduw boven */
 
-    /* Text in de footer in het midden */
-    display: flex;
-    justify-content: center;    /* horizontaal */
-    align-items: center;        /* verticaal */
+  display: flex;               /* flexbox */
+  justify-content: center;     /* horizontaal centreren */
+  align-items: center;         /* verticaal centreren */
 }
-
 
 footer p {
-  margin: 0;
+  margin: 0;                   /* geen extra marge */
 }
 
-/* Opmaak voor tabel van binairstelsel */
+/* Tabel voor binairstelsel */
 table {
-    margin: 20px auto;
-    border-collapse: collapse;
-    width: 80%;
-    max-width: 600px;
-    background-color: #60959e;
-    border-radius: 10px;
-    overflow: hidden;
+  margin: 20px auto;           /* gecentreerd */
+  border-collapse: collapse;   /* geen dubbele randen */
+  width: 80%;                  /* breedte */
+  max-width: 600px;            /* maximale breedte */
+  background-color: #60959e;   /* achtergrondkleur */
+  border-radius: 10px;         /* afgeronde hoeken */
+  overflow: hidden;            /* binnen grenzen */
 }
 
 table th, table td {
-    border: 1px solid #555;
-    padding: 10px;
-    text-align: center;
+  border: 1px solid #555;      /* dunne randjes */
+  padding: 10px;               /* binnenruimte */
+  text-align: center;          /* tekst centreren */
 }
 
 table th {
-    background-color: #2c5d63;
-    color: white;
+  background-color: #2c5d63;   /* donkere header */
+  color: white;                /* witte tekst */
 }
 
 table tr:nth-child(even) {
-    background-color: #77aabb55;
+  background-color: #77aabb55; /* afwisselende kleur */
 }
 
-/* Video in het midden zetten */
+/* Video sectie */
 .video-section {
-    text-align: center;
-    margin: 20px auto;
+  text-align: center;          /* centreren */
+  margin: 20px auto;           /* ruimte rondom */
 }
 
-/* Video opmaak */
 .video-iframe {
-    width: 80%;          
-    max-width: 700px;   
-    height: 400px;       
-    border: none;        
+  width: 80%;                  /* responsieve breedte */
+  max-width: 700px;            /* maximale breedte */
+  height: 400px;               /* vaste hoogte */
+  border: none;                /* geen rand */
 }
 
-/* Opmaak voor kleinere beeldschermen */
+/* Responsive design (mobiel) */
 @media (max-width: 768px) {
   ul {
-    position: static;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 0;
+    position: static;          /* menu bovenaan */
+    width: 100%;               /* volle breedte */
+    height: auto;              /* hoogte aanpassen */
+    display: flex;             /* horizontale menu */
+    justify-content: space-around; /* ruimte tussen items */
+    border-radius: 0;          /* geen afgeronde hoeken */
   }
+
   .video-iframe {
-        width: 95%;
-        height: 300px;
-    }
+    width: 95%;                /* bijna volle breedte */
+    height: 300px;             /* lagere hoogte */
+  }
+
   p {
-    font-size: 1.2rem;
-    padding: 15px;
+    font-size: 1.2rem;         /* kleinere tekst */
+    padding: 15px;             /* minder ruimte */
   }
 }
