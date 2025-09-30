@@ -94,6 +94,42 @@ iframe {
   border-radius: 10px;
 }
 
+.side-by-side {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    gap: 5px;               
+    flex-wrap: wrap;         
+}
+
+.side-by-side p {
+    max-width: 400px; 
+}
+*/
+.side-by-side {
+    display: flex;
+    justify-content: center;  /* horizontaal centreren */
+    align-items: stretch;     /* dit zorgt dat alle flex-items dezelfde hoogte krijgen */
+    gap: 20px;                /* ruimte tussen blokken */
+    flex-wrap: wrap;          /* mobiel: onder elkaar als te smal */
+}
+
+.side-by-side p {
+    flex: 1;                  /* elk p-element neemt evenveel ruimte */
+    max-width: 550px;         /* optioneel, voorkomt dat ze te breed worden */
+    margin: 0;                /* verwijder extra marge */
+    padding: 20px;            /* binnenruimte */
+    box-sizing: border-box;   /* zorgt dat padding niet de breedte verpest */
+    text-align: center;       /* optioneel, tekst centreren */
+}
+
+.image2 {
+    max-width: 400px;  /* foto blijft kleiner */
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px #55555555;
+}
 .overlay {
   position: absolute;
   top: 0;
